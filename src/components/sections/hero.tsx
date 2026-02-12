@@ -13,7 +13,6 @@ export function HeroSection() {
           height={100}
           className="w-full h-full object-cover filter grayscale-[0.2]"
           priority
-          data-ai-hint="profile picture"
         />
       </div>
 
