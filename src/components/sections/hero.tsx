@@ -1,22 +1,18 @@
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 import { ThemeToggle } from '../theme-toggle';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function HeroSection() {
-  const profileImage = PlaceHolderImages.find(p => p.id === 'profile-picture');
-
   return (
     <div className="flex flex-col md:flex-row gap-10 items-start">
       <div className="w-[100px] h-[100px] rounded-2xl overflow-hidden bg-neutral-900 flex-shrink-0 border border-border shadow-lg">
         <Image
-          src={profileImage?.imageUrl ?? "https://picsum.photos/seed/1/100/100"}
+          src="/profile.jpg"
           alt="Xyrille Navora"
           width={100}
           height={100}
           className="w-full h-full object-cover filter grayscale-[0.2]"
           priority
-          data-ai-hint={profileImage?.imageHint}
         />
       </div>
 
