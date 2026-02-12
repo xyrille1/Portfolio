@@ -12,7 +12,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="rounded-full h-10 w-10 text-muted-foreground transition-all active:scale-95"
+      className="rounded-full h-10 w-10 text-muted-foreground transition-all active:scale-95 border border-transparent hover:border-border hover:bg-transparent hover:text-muted-foreground"
       aria-label="Toggle theme"
     >
       <Moon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
