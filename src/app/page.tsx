@@ -4,13 +4,11 @@ import { EducationSection } from '@/components/sections/education';
 import { HeroSection } from '@/components/sections/hero';
 import { SkillsSection } from '@/components/sections/skills';
 import { FadeInSection } from '@/components/fade-in-section';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
   return (
     <>
-      <ThemeToggle />
       <main className="max-w-4xl mx-auto px-8 pt-32 pb-16 md:pb-32">
         <FadeInSection className="mb-16">
           <HeroSection />
