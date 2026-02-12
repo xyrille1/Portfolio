@@ -6,11 +6,10 @@ export function AboutSection() {
       </h2>
       <div className="space-y-6 max-w-2xl text-sm md:text-[15px] text-muted-foreground leading-relaxed">
         <p>
-          As a Full-Stack Software Engineer, I specialize in architecting
-          sophisticated web solutions with a primary focus on Front-End
-          excellence and Web3 integration. My expertise lies in building dynamic,
-          data-driven platforms designed for high performance and maximum
-          security.
+          As a Full-Stack Developer, I specialize in architecting sophisticated
+          web solutions with a primary focus on Front-End excellence and Web3
+          integration. My expertise lies in building dynamic, data-driven
+          platforms designed for high performance and maximum security.
         </p>
         <p>
           I distinguish my work by integrating comprehensive SEO strategies
