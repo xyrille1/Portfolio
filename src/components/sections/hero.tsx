@@ -7,11 +7,12 @@ export function HeroSection() {
     <div className="flex flex-col md:flex-row gap-10 items-start">
       <div className="w-[100px] h-[100px] rounded-2xl overflow-hidden bg-neutral-900 flex-shrink-0 border border-border shadow-lg">
         <Image
-          src="/profile.png"
+          src="https://picsum.photos/seed/xyrille/100/100"
           alt="Xyrille Navora"
           width={100}
           height={100}
-          className="w-full h-full object-cover filter grayscale-[0.2]"
+          data-ai-hint="profile picture"
+          className="w-full h-full object-cover"
           priority
         />
       </div>
