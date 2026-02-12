@@ -5,7 +5,6 @@ import { HeroSection } from '@/components/sections/hero';
 import { SkillsSection } from '@/components/sections/skills';
 import { FadeInSection } from '@/components/fade-in-section';
 import { Footer } from '@/components/footer';
-import { Chatbot } from '@/components/chatbot';
 
 export default function Home() {
   return (
@@ -27,12 +26,11 @@ export default function Home() {
           <SkillsSection />
         </FadeInSection>
 
-        <FadeInSection className="pt-24 border-t border-zinc-100 dark:border-zinc-900">
+        <FadeInSection className="pt-24 border-t border-border">
           <ConnectSection />
         </FadeInSection>
       </main>
       <Footer />
-      <Chatbot />
     </>
   );
 }

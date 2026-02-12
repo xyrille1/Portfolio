@@ -22,7 +22,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useActionState, useEffect, useRef, type ReactNode, useTransition } from 'react';
+import { useActionState, useEffect, useRef, type ReactNode } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Copy, Loader2, Mail, Send } from 'lucide-react';
 
@@ -54,7 +54,6 @@ function SubmitButton() {
 
 export function InquiryModal({ open, onOpenChange }: InquiryModalProps) {
   const [state, formAction] = useActionState(generateInquiry, initialState);
-  const [isPending, startTransition] = useTransition();
   const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
 
@@ -72,11 +71,10 @@ export function InquiryModal({ open, onOpenChange }: InquiryModalProps) {
 
   const handleOpenChange = (isOpen: boolean) => {
     if (!isOpen) {
-      startTransition(() => {
+        const clearFormData = new FormData();
+        clearFormData.append('clear', 'true');
+        formAction(clearFormData);
         formRef.current?.reset();
-        // Resetting form state by re-running the action with special value
-        formAction(new FormData());
-      });
     }
     onOpenChange(isOpen);
   };
