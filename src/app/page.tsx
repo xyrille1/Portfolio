@@ -5,6 +5,7 @@ import { HeroSection } from '@/components/sections/hero';
 import { SkillsSection } from '@/components/sections/skills';
 import { FadeInSection } from '@/components/fade-in-section';
 import { Footer } from '@/components/footer';
+import { Chatbot } from '@/components/chatbot';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         </FadeInSection>
       </main>
       <Footer />
+      <Chatbot />
     </>
   );
 }

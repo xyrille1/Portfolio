@@ -9,6 +9,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import { XYRILLE_PROFILE } from '@/lib/data';
 
 // Input Schema for drafting an inquiry
 const InquiryDraftInputSchema = z.object({
@@ -31,31 +32,6 @@ export async function draftInquiry(input: InquiryDraftInput): Promise<InquiryDra
   return inquiryDraftFlow(input);
 }
 
-// Xyrille Navora's profile information (extracted from the provided HTML)
-const XyrilleProfile = `
-Name: Xyrille Navora
-Location: Manaoag, Philippines
-Role: Full-Stack Software Engineer, Web3 Specialist
-
-About:
-As a Full-Stack Software Engineer, I specialize in architecting sophisticated web solutions with a primary focus on Front-End excellence and Web3 integration. My expertise lies in building dynamic, data-driven platforms designed for high performance and maximum security.
-I distinguish my work by integrating comprehensive SEO strategies directly into the development lifecycle. From optimizing core performance metrics to implementing advanced rendering patterns, I ensure that decentralized platforms are technically robust and discoverable.
-
-Education:
-BS Information Technology (2022 — Present)
-Colegio de San Juan de Letran - Manaoag
-Focused on Software Development, Web Development and Data Structures. Engaged in building practical solutions and exploring emerging technologies.
-
-Technical Skills (Stack):
-Web & Frontend: Next.js, TypeScript, React, Tailwind CSS, Bootstrap
-Backend & Core: Python, Flask, Node.js, PHP, MySQL, PostgreSQL, Firebase, MongoDB, Sui, Move
-
-Speaking:
-Available for speaking at events about software development and emerging technologies.
-
-Contact Email: xyrillenavora@email.com
-`;
-
 // Genkit Prompt definition
 const inquiryDraftPrompt = ai.definePrompt({
   name: 'inquiryDraftPrompt',
@@ -67,7 +43,7 @@ The goal is to create an email that is clear, concise, and tailored to both the 
 
 **Xyrille Navora's Profile:**
 ---
-${XyrilleProfile}
+${XYRILLE_PROFILE}
 ---
 
 **Visitor's Request Details:**
