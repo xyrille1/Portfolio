@@ -2,7 +2,13 @@
 import { useState } from 'react';
 import { SOCIAL_LINKS, type SocialLink } from '@/lib/data';
 import { cn } from '@/lib/utils';
-import { BookOpen, Calendar, ChevronRight, MessageSquareHeart, Users } from 'lucide-react';
+import {
+  BookOpen,
+  Calendar,
+  ChevronRight,
+  MessageSquareHeart,
+  Users,
+} from 'lucide-react';
 import { InquiryModal } from '@/components/inquiry-modal';
 
 export function ConnectSection() {
@@ -33,7 +39,7 @@ export function ConnectSection() {
                 <span className="text-sm font-medium">{link.name}</span>
               </a>
             ))}
-             <a
+            <a
               href="mailto:xyrillenavora@email.com"
               className="flex items-center gap-4 p-3 hover:bg-muted/50 rounded-lg transition-all group"
             >
@@ -43,54 +49,59 @@ export function ConnectSection() {
           </div>
         </div>
 
-
         <div className="flex flex-col">
           <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-6">
-            Inquiries
+            Let's Connect
           </h3>
-          <div className="border border-border rounded-xl overflow-hidden bg-background/50">
+          <div className="border border-border rounded-xl overflow-hidden bg-background/50 divide-y divide-border">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="w-full text-left flex items-center justify-between p-4 border-b border-border transition-colors hover:bg-muted/50 group"
+              className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted/50 group"
             >
-              <div>
-                <div className="flex items-center gap-2 text-primary mb-1">
-                  <MessageSquareHeart className="w-4 h-4" />
-                  <span className="text-xs uppercase font-bold tracking-wider">
-                    Draft a Message
-                  </span>
+              <div className="flex items-center gap-4">
+                <MessageSquareHeart className="w-6 h-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold text-foreground">
+                    Draft an Inquiry
+                  </h4>
+                  <p className="text-xs text-muted-foreground">
+                    Let AI help you write a professional message.
+                  </p>
                 </div>
-                <span className="text-sm font-medium">Let AI help you connect</span>
               </div>
               <ChevronRight className="w-5 h-5 text-muted-foreground/30 group-hover:translate-x-1 transition-transform" />
             </button>
             <a
               href="#"
-              className="flex items-center justify-between p-4 border-b border-border transition-colors hover:bg-muted/50 group"
+              className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted/50 group"
             >
-              <div>
-                <div className="flex items-center gap-2 text-muted-foreground mb-1">
-                  <Users className="w-4 h-4" />
-                  <span className="text-xs uppercase font-bold tracking-wider">
+              <div className="flex items-center gap-4">
+                <Users className="w-6 h-6 text-accent" />
+                <div>
+                  <h4 className="font-semibold text-foreground">
                     Collaboration
-                  </span>
+                  </h4>
+                  <p className="text-xs text-muted-foreground">
+                    Interested in working together on a project.
+                  </p>
                 </div>
-                <span className="text-sm font-medium">Join forces on a project</span>
               </div>
               <ChevronRight className="w-5 h-5 text-muted-foreground/30 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#"
-              className="flex items-center justify-between p-4 transition-colors hover:bg-muted/50 group"
+              className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted/50 group"
             >
-              <div>
-                <div className="flex items-center gap-2 text-muted-foreground mb-1">
-                  <BookOpen className="w-4 h-4" />
-                  <span className="text-xs uppercase font-bold tracking-wider">
-                    Blog
-                  </span>
+              <div className="flex items-center gap-4">
+                <BookOpen className="w-6 h-6 text-muted-foreground" />
+                <div>
+                  <h4 className="font-semibold text-foreground">
+                    Explore my Blog
+                  </h4>
+                  <p className="text-xs text-muted-foreground">
+                    Read my latest articles and thoughts.
+                  </p>
                 </div>
-                <span className="text-sm font-medium">Read my latest articles</span>
               </div>
               <ChevronRight className="w-5 h-5 text-muted-foreground/30 group-hover:translate-x-1 transition-transform" />
             </a>
