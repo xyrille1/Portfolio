@@ -15,16 +15,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "#",
+    url: "https://www.linkedin.com/in/edgar-xyrille-jr-navora-5733492b5/",
   },
   {
     name: "GitHub",
     icon: Github,
-    url: "#",
+    url: "https://github.com/xyrille1",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    url: "#",
+    url: "https://www.instagram.com/xrllefleur/?hl=en",
   },
 ];
