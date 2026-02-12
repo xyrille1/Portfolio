@@ -1,6 +1,6 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormStatus } from 'react-dom';
 import {
   Dialog,
   DialogContent,
@@ -22,7 +22,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useActionState, useEffect, useRef, type ReactNode } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Copy, Loader2, Mail, Send } from 'lucide-react';
 
@@ -53,7 +53,7 @@ function SubmitButton() {
 }
 
 export function InquiryModal({ open, onOpenChange }: InquiryModalProps) {
-  const [state, formAction] = useFormState(generateInquiry, initialState);
+  const [state, formAction] = useActionState(generateInquiry, initialState);
   const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
 
