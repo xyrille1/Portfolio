@@ -31,10 +31,7 @@ export function ConnectSection() {
                 className="flex items-center gap-4 p-3 hover:bg-muted/50 rounded-lg transition-all group"
               >
                 <link.icon
-                  className={cn(
-                    'w-5 h-5 text-muted-foreground transition-colors',
-                    link.hoverColor
-                  )}
+                  className="w-5 h-5 text-muted-foreground transition-colors"
                 />
                 <span className="text-sm font-medium">{link.name}</span>
               </a>
@@ -43,7 +40,7 @@ export function ConnectSection() {
               href="mailto:xyrillenavora@email.com"
               className="flex items-center gap-4 p-3 hover:bg-muted/50 rounded-lg transition-all group"
             >
-              <Calendar className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <Calendar className="w-5 h-5 text-muted-foreground transition-colors" />
               <span className="text-sm font-medium">Speaking Engagements</span>
             </a>
           </div>
@@ -59,7 +56,7 @@ export function ConnectSection() {
               className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted/50 group"
             >
               <div className="flex items-center gap-4">
-                <MessageSquareHeart className="w-6 h-6 text-primary" />
+                <MessageSquareHeart className="w-6 h-6 text-muted-foreground" />
                 <div>
                   <h4 className="font-semibold text-foreground">
                     Draft an Inquiry
@@ -76,7 +73,7 @@ export function ConnectSection() {
               className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted/50 group"
             >
               <div className="flex items-center gap-4">
-                <Users className="w-6 h-6 text-accent" />
+                <Users className="w-6 h-6 text-muted-foreground" />
                 <div>
                   <h4 className="font-semibold text-foreground">
                     Collaboration

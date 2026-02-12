@@ -9,7 +9,6 @@ export type SocialLink = {
   name: string;
   icon: LucideIcon;
   url: string;
-  hoverColor: string;
 };
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -17,18 +16,15 @@ export const SOCIAL_LINKS: SocialLink[] = [
     name: "LinkedIn",
     icon: Linkedin,
     url: "#",
-    hoverColor: "group-hover:text-primary",
   },
   {
     name: "GitHub",
     icon: Github,
     url: "#",
-    hoverColor: "group-hover:text-primary",
   },
   {
     name: "Instagram",
     icon: Instagram,
     url: "#",
-    hoverColor: "group-hover:text-primary",
   },
 ];
