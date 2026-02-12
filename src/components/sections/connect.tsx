@@ -79,9 +79,9 @@ export function ConnectSection() {
 
             <button
               onClick={() => setIsModalOpen(true)}
-              className="w-full text-left inquiry-item group"
+              className="w-full text-left flex items-center justify-between p-4 border-b border-border transition-colors hover:bg-muted/30 group"
             >
-              <div className="flex-1">
+              <div>
                 <div className="flex items-center gap-2 text-muted-foreground mb-1">
                   <Calendar className="w-3.5 h-3.5" />
                   <span className="text-[10px] uppercase font-bold tracking-wider">
@@ -93,7 +93,10 @@ export function ConnectSection() {
               <ChevronRight className="w-4 h-4 text-muted-foreground/30 group-hover:translate-x-1 transition-transform" />
             </button>
 
-            <a href="#" className="inquiry-item group">
+            <a
+              href="#"
+              className="flex items-center justify-between p-4 transition-colors hover:bg-muted/30 group"
+            >
               <div>
                 <div className="flex items-center gap-2 text-muted-foreground mb-1">
                   <BookOpen className="w-3.5 h-3.5" />
@@ -112,6 +115,3 @@ export function ConnectSection() {
     </>
   );
 }
-
-// Custom inquiry item style from globals.css for use with Tailwind
-const inquiryItemStyle = "flex items-center justify-between p-4 border-b border-border transition-colors last:border-b-0 hover:bg-muted/30";
