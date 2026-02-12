@@ -17,9 +17,7 @@ export function EducationSection() {
             Colegio de San Juan de Letran - Manaoag
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">
-            Focused on Software Development, Web Development and Data Structures.
-            Engaged in building practical solutions and exploring emerging
-            technologies.
+          Specializing in Web3-ready full-stack solutions, I focus on front-end excellence and secure systems architecture. I prioritize technical SEO and performance optimization as foundational elements, ensuring that complex, decentralized applications achieve maximum visibility and seamless user experiences.
           </p>
         </div>
       </div>
