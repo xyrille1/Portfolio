@@ -18,17 +18,17 @@ export function ConnectSection() {
           <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-6">
             Social
           </h3>
-          <div className="border border-border p-3 rounded-xl h-full space-y-1 bg-background/50">
+          <div className="border border-border rounded-xl h-full divide-y divide-border bg-background/50 overflow-hidden">
             {SOCIAL_LINKS.map((link: SocialLink) => (
               <a
                 key={link.name}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-3 hover:bg-muted rounded-lg transition-all group"
+                className="flex items-center gap-4 p-4 transition-colors hover:bg-muted"
               >
                 <link.icon
-                  className="w-5 h-5 text-muted-foreground"
+                  className="w-5 h-5 text-muted-foreground/50"
                 />
                 <span className="text-sm font-medium">{link.name}</span>
               </a>
@@ -46,7 +46,7 @@ export function ConnectSection() {
               className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted group"
             >
               <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-muted-foreground" />
+                <Mail className="w-5 h-5 text-muted-foreground/50" />
                 <div>
                   <h4 className="font-semibold text-foreground text-[14px]">
                     Email
@@ -62,7 +62,7 @@ export function ConnectSection() {
               className="w-full text-left flex items-center justify-between p-4 transition-colors hover:bg-muted group"
             >
               <div className="flex items-center gap-4">
-                <Calendar className="w-6 h-6 text-muted-foreground" />
+                <Calendar className="w-5 h-5 text-muted-foreground/50" />
                 <div>
                   <h4 className="font-semibold text-foreground text-[14px]">
                     Let's Talk
