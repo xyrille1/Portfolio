@@ -2,7 +2,7 @@ import { Github, Instagram, Linkedin, type LucideIcon } from "lucide-react";
 
 export const SKILLS = {
   "Web & Frontend": ["Next.js", "TypeScript", "React", "Tailwind CSS", "Bootstrap"],
-  "Backend & Core": ["Python", "Flask", "Node.js", "PHP", "MySQL", "PostgreSQL", "Firebase", "MongoDB", "Sui", "Move", "RESTful APIs"],
+  "Backend & Core": ["Python", "Flask", "Node.js", "PHP", "MySQL", "PostgreSQL", "Firebase", "MongoDB", "Sui", "Move", "RESTful APIs", "IPFS (Decentralized Storage)"],
 };
 
 export type SocialLink = {
