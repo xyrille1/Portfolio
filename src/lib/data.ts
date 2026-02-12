@@ -17,18 +17,18 @@ export const SOCIAL_LINKS: SocialLink[] = [
     name: "LinkedIn",
     icon: Linkedin,
     url: "#",
-    hoverColor: "group-hover:text-blue-500",
+    hoverColor: "group-hover:text-primary",
   },
   {
     name: "GitHub",
     icon: Github,
     url: "#",
-    hoverColor: "group-hover:text-foreground",
+    hoverColor: "group-hover:text-primary",
   },
   {
     name: "Instagram",
     icon: Instagram,
     url: "#",
-    hoverColor: "group-hover:text-pink-500",
+    hoverColor: "group-hover:text-primary",
   },
 ];
