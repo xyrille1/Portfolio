@@ -13,7 +13,7 @@ export function EducationSection() {
               2022 — Present
             </span>
           </div>
-          <p className="text-sm font-medium text-accent mb-4">
+          <p className="text-sm font-medium text-muted-foreground mb-4">
             Colegio de San Juan de Letran - Manaoag
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">
