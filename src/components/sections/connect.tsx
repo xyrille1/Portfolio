@@ -15,7 +15,7 @@ export function ConnectSection() {
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col">
-          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-6">
+          <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-6">
             Social
           </h3>
           <div className="border border-border p-3 rounded-xl h-full space-y-1 bg-background/50">
@@ -37,7 +37,7 @@ export function ConnectSection() {
         </div>
 
         <div className="flex flex-col">
-          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-6">
+          <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-6">
             Let's Connect
           </h3>
           <div className="border border-border rounded-xl overflow-hidden bg-background/50 divide-y divide-border">
@@ -48,10 +48,10 @@ export function ConnectSection() {
               <div className="flex items-center gap-4">
                 <Mail className="w-6 h-6 text-muted-foreground" />
                 <div>
-                  <h4 className="font-semibold text-foreground">
+                  <h4 className="font-semibold text-foreground text-sm">
                     Email
                   </h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs text-muted-foreground">
                     xyrillenavora@email.com
                   </p>
                 </div>
@@ -64,10 +64,10 @@ export function ConnectSection() {
               <div className="flex items-center gap-4">
                 <Calendar className="w-6 h-6 text-muted-foreground" />
                 <div>
-                  <h4 className="font-semibold text-foreground">
+                  <h4 className="font-semibold text-foreground text-sm">
                     Let's Talk
                   </h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs text-muted-foreground">
                     Schedule a Call
                   </p>
                 </div>
