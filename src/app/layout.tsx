@@ -1,12 +1,12 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
-import { Toaster } from '@/components/ui/toaster';
+import type { Metadata } from "next";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Xyrille Navora | Full-Stack Software Engineer',
+  title: "Xyrille Navora | Full-Stack Software Engineer",
   description:
-    'Portfolio of Xyrille Navora, a Full-Stack Software Engineer and Web3 Specialist.',
+    "Portfolio of Xyrille Navora, a Full-Stack Software Engineer and Web3 Specialist.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-body antialiased">
+      <body className="font-body antialiased" suppressHydrationWarning>
         <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
           {children}
           <Toaster />
