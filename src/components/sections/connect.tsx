@@ -1,12 +1,8 @@
-'use client';
-import { useState } from 'react';
-import { SOCIAL_LINKS, type SocialLink } from '@/lib/data';
-import {
-  Calendar,
-  ChevronRight,
-  Mail,
-} from 'lucide-react';
-import { InquiryModal } from '@/components/inquiry-modal';
+"use client";
+import { useState } from "react";
+import { SOCIAL_LINKS, type SocialLink } from "@/lib/data";
+import { Calendar, ChevronRight, Mail } from "lucide-react";
+import { InquiryModal } from "@/components/inquiry-modal";
 
 export function ConnectSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,9 +23,7 @@ export function ConnectSection() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 transition-colors hover:bg-muted"
               >
-                <link.icon
-                  className="w-5 h-5 text-muted-foreground/50"
-                />
+                <link.icon className="w-5 h-5 text-muted-foreground/50" />
                 <span className="text-sm font-medium">{link.name}</span>
               </a>
             ))}
@@ -52,7 +46,7 @@ export function ConnectSection() {
                     Email
                   </h4>
                   <p className="text-xs text-muted-foreground">
-                    xyrillenavora@email.com
+                    xyrillenavora02@email.com
                   </p>
                 </div>
               </div>

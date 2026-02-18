@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { MapPin } from 'lucide-react';
-import { ThemeToggle } from '../theme-toggle';
+import Image from "next/image";
+import { MapPin } from "lucide-react";
+import { ThemeToggle } from "../theme-toggle";
 
 export function HeroSection() {
   return (
@@ -36,6 +36,13 @@ export function HeroSection() {
         <div className="flex flex-wrap items-center gap-3">
           <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
             Full-Stack Developer
+<<<<<<< HEAD
+=======
+          </span>
+          <span className="opacity-20">—</span>
+          <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
+            Frontend
+>>>>>>> a958ae857c000b15af55b11381e8c2a41d0df51e
           </span>
           <span className="opacity-20">—</span>
           <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
