@@ -5,6 +5,7 @@ import { HeroSection } from '@/components/sections/hero';
 import { SkillsSection } from '@/components/sections/skills';
 import { FadeInSection } from '@/components/fade-in-section';
 import { Footer } from '@/components/footer';
+import { ProjectsSection } from '@/components/sections/projects';
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
 
         <FadeInSection className="mb-16 md:mb-40">
           <SkillsSection />
+        </FadeInSection>
+
+        <FadeInSection className="mb-16 md:mb-40">
+          <ProjectsSection />
         </FadeInSection>
 
         <FadeInSection className="pt-24 border-t border-border">
