@@ -36,20 +36,14 @@ export function HeroSection() {
         <div className="flex flex-wrap items-center gap-3">
           <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
             Full-Stack Developer
-<<<<<<< HEAD
-=======
-          </span>
-          <span className="opacity-20">—</span>
-          <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
-            Frontend
->>>>>>> a958ae857c000b15af55b11381e8c2a41d0df51e
           </span>
           <span className="opacity-20">—</span>
           <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
             Web3 Specialist
           </span>
+          <span className="opacity-20">—</span>
           <span className="text-xs uppercase tracking-widest font-semibold text-muted-foreground/70">
-            Frontend 
+            Frontend
           </span>
         </div>
       </div>

@@ -8,35 +8,40 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Decentralized Finance Dashboard',
+    title: "SuiCare",
     description:
-      'A comprehensive dashboard for tracking and managing assets across various DeFi protocols, providing real-time data and analytics.',
-    tags: ['Next.js', 'Web3', 'Tailwind CSS', 'Firebase'],
-    link: 'https://github.com/xyrille1',
-    imageId: 'project-1',
+      "SuiCare is a web application designed to facilitate transparent charitable campaigns and donations, leveraging smart contracts for secure transactions.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostCSS",
+      "Shadcn UI",
+      "Move",
+      "Sui",
+      "Firebase",
+    ],
+    link: "https://suicare-donation.vercel.app/",
+    imageId: "project-1",
   },
   {
-    title: 'NFT Marketplace Platform',
+    title: "SuiProof",
     description:
-      'A full-featured marketplace for creating, buying, and selling Non-Fungible Tokens with a focus on user experience and security.',
-    tags: ['React', 'Solidity', 'IPFS', 'Node.js'],
-    link: 'https://github.com/xyrille1',
-    imageId: 'project-2',
-  },
-  {
-    title: 'Portfolio Website V2',
-    description:
-      'A personal portfolio website built with modern web technologies to showcase skills, projects, and professional experience.',
-    tags: ['Next.js', 'TypeScript', 'Genkit', 'ShadCN UI'],
-    link: 'https://github.com/xyrille1',
-    imageId: 'project-3',
-  },
-  {
-    title: 'AI-Powered Content Generator',
-    description:
-      'A tool that leverages generative AI to create high-quality written content for blogs, articles, and social media posts.',
-    tags: ['Python', 'Flask', 'Google AI', 'React'],
-    link: 'https://github.com/xyrille1',
-    imageId: 'project-4',
+      "SuiProof is a decentralized application built on the Sui blockchain, designed to provide institutional-grade asset anchoring, verification, and proof management.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostCSS",
+      "Shadcn UI",
+      "Move",
+      "Sui",
+      "Pinata IPFS",
+      "YAML",
+    ],
+    link: "https://suiproof-immutable.vercel.app/",
+    imageId: "project-2",
   },
 ];
